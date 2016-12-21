@@ -21,6 +21,6 @@ const Customer = (function (){
   }
 }())
 
-Customer.prototype.all = function() {
+Customer.all = function() {
   return store.customers
 };
