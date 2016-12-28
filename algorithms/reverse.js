@@ -1,3 +1,5 @@
+// take a shot at the recursive solution
+
 function reverse(string){
 
   var array = string.split("")
