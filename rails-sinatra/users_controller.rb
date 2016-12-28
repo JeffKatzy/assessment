@@ -6,6 +6,10 @@ class UsersController < ApplicationController
   # /users/new
 
   def create
+#     if change structure of params can do params[:user]
+#     which will return hash of {name: 'foo', hometown: 'bar'}
+#     and then with mass assignment, User.create(params[:user])
+    
     @user = User.create(params[:name], params[:hometown])
   end
   # POST /users
