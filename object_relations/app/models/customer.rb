@@ -16,6 +16,7 @@ class Customer
   end
 
   def self.find_by_name(name)
+    
     @@all.find { |cust| cust.name == name }
   end
 
@@ -25,10 +26,12 @@ class Customer
 
   def add_review(review, restaurant)
     @reviews << review
+#     instead of separately storing the reviews on the restaurant, you can just select the reviews that have the right restaurant.id or name
     restaurant.reviews << review
   end
 
   def add_restaurant(restaurant)
+
     @restaurants << restaurant
     restaurant.customers << self
   end
