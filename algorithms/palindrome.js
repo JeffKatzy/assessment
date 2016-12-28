@@ -1,3 +1,5 @@
+// this works well - also take a shot at the recursive solution
+
 function palindrome(string){
 
   var array = string.split("")
